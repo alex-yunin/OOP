@@ -163,6 +163,30 @@ Fraction operator+ (const Fraction &fr1, const Fraction &fr2) {
 
 //Конец кода_3.1 для задачи 3 ******************************************* Конец кода_3.1 для задачи 3
 
+//Код_4.1 для задачи 4 ************************************************** Код_4.1 для задачи 4
+
+class Card{
+private:
+    enum Mast{ C2, C3, C4, C5, C6, C7, C8, C9, C10, CJ, CQ, CK, CA };
+    enum Value{ v1 = 1, v2, v3, v4, v5, v6, v7, v8, v9, v10 };
+    bool m_flip;
+    Mast m_mast;
+    Value m_value;
+public:
+    Card() : m_flip(0) {}
+    void Flip(){
+        if(m_flip == 0)
+            m_flip = 1;
+        else
+            m_flip = 0;
+    }
+    int getValue(){ return m_value; }
+};
+
+
+
+//Конец кода_4.1 для задачи 4 ******************************************* Конец кода_4.1 для задачи 4
+
 
 int main()
 {
